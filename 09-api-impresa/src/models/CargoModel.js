@@ -8,4 +8,4 @@ const schema = new mongoose.Schema({
 
 const CargoModel = mongoose.model('Cargos', schema)
 
-module.exports = Cargomopdel
+module.exports = CargoModel

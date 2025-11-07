@@ -1,8 +1,8 @@
-const express = required('express')
+const express = require('express')
 const router = express.Router()
 
-const CargoModel = required('../models/CargoModel')
-const {validarCargo} = required('../validators/CargoValidator')
+const CargoModel = require('../models/CargoModel')
+const {validarCargo} = require('../validators/CargoValidator')
 
 router.get('/cargo', async ( req, res, next) => {
     const cargos = await CargoModel.find()

@@ -1,8 +1,8 @@
-const express = required('express')
+const express = require('express')
 const router = express.Router()
 
-const DepartamentoModel = required('../models/DepartamentoModel')
-const {validarDepartamento} = required('../validators/DepartamentoValidator')
+const DepartamentoModel = require('../models/DepartamentoModel')
+const {validarDepartamento} = require('../validators/DepartamentoValidator')
 
 router.get('/departamento', async ( req, res, next) => {
     const departamentos = await DepartamentoModel.find()
